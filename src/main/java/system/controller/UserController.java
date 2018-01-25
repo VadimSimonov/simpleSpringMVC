@@ -25,6 +25,7 @@ public class UserController {
     public @ResponseBody List<User> getAllUsers(){
        return userService.getAllUsers();
     }
+
     @RequestMapping(value = "/validate", method = RequestMethod.GET)
     public @ResponseBody ModelAndView validateUsers(){
         ModelAndView modelAndView = new ModelAndView();
